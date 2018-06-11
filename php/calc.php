@@ -7,7 +7,7 @@
 
 
 <body>
-<h1> Computing</h1>
+<h1> text</h1>
 <?php 
 
 $a=$_GET ["val1"];
@@ -19,9 +19,9 @@ $ch=$_GET["stav"];
 
 
 
-if(empty($_GET["val1"])          || empty($_GET["val2"])  )
+if(empty($_GET["val1"]) ||($v!="on")         || empty($_GET["val2"])   )
 {
-echo "empty values";
+echo "empty values or you dont agree";
 
 }
 
@@ -31,46 +31,38 @@ else{
 
 $a=$_GET ["val1"];
 $b=$_GET["val2"];
-
-echo "+";
 $c=$a+$b;
+
+echo $c;
 echo "<br>";
-echo $c;
+
+
 $c=$a-$b;
-echo "-";
 echo $c;
+
+echo "<br>";
+
+
 	}
 if($ch==2){
 	$a=$_GET ["val1"];
 $b=$_GET["val2"];
 $c=$a+$b;
-echo "+";
-echo "<br>";
 echo $c;
 echo "<br>";
-
 	$c=$a-$b;
-	echo "-";
-	echo "<br>";
-echo $c;
-	
-	echo "<br>";
-	
+	echo $c;
+echo "<br>";
 $c=$a*$b;
-	echo "*";
-	echo "<br>";
 echo $c;
 echo "<br>";
-
+echo $c;
 if($b==0) echo "nulou sa nedelí";
 else {
 	
  $c=$a/$b;
- echo "<br>";
- echo "/";
- echo "<br>";
  echo $c;
- echo "<br>";
+echo "<br>";
 	
 }
 }
